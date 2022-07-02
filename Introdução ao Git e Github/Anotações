@@ -1,0 +1,43 @@
+Comandos Iniciais Git
+
+- Git init "utilizado para iniciar o git ou seja criar um reposítório local para controle de versionamento"
+- Git add "Adiciona os arquivos ao stage para que sejam preparados para o commit"
+- Git commit "Confirma as alterações para que seja enviado as alterações para o git hub"
+- Git status "Verifica se o arquivo possui modificações e se está preparado para ser importado para o github"
+- git config --list "Verifica as credenciais configuradas"
+
+É necessário também realizar uma configuração básica do git com os dados do github para que os commit tenham o autor coreto.
+utiliza-se os comandos abaixo para a configuração.
+
+- git config --global user.email "email_Git"
+- git config --global user.name "nickname_Git"
+
+caso seja necessário realizar a alteração dos dados de usuário basta utilizar o seguinte comando.
+
+- git config --global --unset user.email "email_Git"
+- git config --global --unset user.name "nickname_Git"
+
+git add *
+git commit -m "Decrição referente ao commit"
+
+Passo a passo para subir o repositório para o GitHub.
+
+- git remote add origin https:"link do reposítorio do github"
+- git remote -v "lista os repositórios cadastrados"
+- git status "verificar se não possui nem uma pendência no repositório"
+- git push origin master "Empurrar o código para o Github ou seja importar da máquina local para a nuvem"
+
+Resolvendo problemas no Git ao dar um push em um código que já foi modificado por outro colaborador
+Caso a versão do código apresente erro é necessário baixar a versão mais atual do repositório na máquina realizar os ajustes necessários para que seja realizado um novo commit.
+
+git pull origin master "Comando utilizado para baixar a versão mais atual do repositório na máquina"
+
+Após a alteração de um 
+- git status
+- git add *
+- git commit -m "Resolve conflitos"
+- git push origin master
+
+Clonando repositórios para a máquina local.
+Basta utilizar o comando
+- Git clone "URL DIRETÓRIO"
